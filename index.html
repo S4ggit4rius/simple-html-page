@@ -1,90 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">
+    <link rel="stylesheet" href="styles.css">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <title>My first website</title>
-    </head>
+</head>
+<body>
 
-    <body>
-        <header>
-            <h1>Welcome to my first website</h1>
-            <a href="https://www.google.pl/">Click here to go to google.com</a>
-            <br>
-            <a href="contact.html">Or click here to get in touch with me</a>
-            <br>  
-        </header>
-
-
-        <article>
-            <h2>First blog post</h2>
-            <p>Content of the first blog post</p>
-            <br> <!-- comment -->
-        </article>
+    <header>
+        <h1>Welcome to my first website!</h1>
+        <a href="contact.html">Contact me</a>
+    </header>
     
-        <article>
-            <h2>Second blog post</h2>
-            <p>Content of the second blog post</p>
-            <br> <!-- another comment just to remember-->
-        </article>
-        
-        <article>
-            <h2>Third blog post</h2>
-            <p>Content of the third blog post <br> And here is the continuation of this post :)</p>
-            <br> <!-- yet another comment-->
-        </article>
 
-        <br><br><br>
+    <div id="main-content">
 
-        <div>
-            My skills:
-            <ul>
-                <li>I know HTML <small>(a little)</small></li>
-                <li>Don't know CSS yet ;(</li>
-            </ul>
+        <section id="articles">
+            <article>
+                <h3>This is my first blog post</h3>
+                <p>This is the content of my first blog post</p>
+                <!-- width of content area only -->
+            </article>
+
+    
+            <article>
+                <h3>This is my second blog post</h3>
+                <p>This is the content of my second blog &lt;something&gt; post</p>
+            </article>
+            
+    
+            <article>
+                <h3>This is my third blog post</h3>
+                <p>This is the <mark>content</mark> of my third blog post. <br> Continue the content after <i>breaking line</i>. <sup class="sup_element">*</sup></p>
+                <small><sup class="sup_element">*</sup>Another sentence</small>
+            </article>
+
+
+        </section>
+
+        <div id="skills"> <!-- div is the block element -->
+            <b style="font-size: 34px;font-weight: 900; color: #20D0FF;">My skills</b>
+
+            <table>
+                <tr>
+                    <th>Technology</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>good ;)</td>
+                </tr>
+            </table>
+
         </div>
 
-        <table border="1">
-            <tr>
-                <th>Technology</th>
-                <th>Level</th>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>JS</td>
-                <td>0</td>
-            </tr>
-        </table>
+    </div>
 
-        <br>
 
+    <footer>
         <div>
-            My other skills:
-            <ol>
-                <li>I can sleep <mark>very</mark> long</li>
-                <li>Im <i>not</i> a patient <sup class="sup_element" style="color: red">type</sup></li>
-            </ol>
+            Footer area. &copy; <strong>Me</strong> & <b>My Tutor</b>
         </div>
+    </footer>
 
-        <br><br><br>
-
-        <div>Contact here, like you know linkedin or mail</div>
-
-        <br><br><br>
-
-        <footer>
-            <div>
-                Footer area. <b>Copyright</b> by <strong>Me ;^)</strong>
-            </div> 
-        </footer>
-    </body>
-
+    <!-- Content not wrapped in any tag (barely used in reality) -->
+    <script src="scripts.js"></script>
+</body>
 </html>
